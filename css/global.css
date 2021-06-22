@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --black: #0d114f;
+    --white: #fafafa;
+    --red: #e83f5b;
+    --light-blue: #e0ecff;
+    --blue: #3485ff;
+    --background: #f6faff;
+    --overlay: #040911;
+    --icons-details: #a5b0c1;
+    --grey-dark: #4d5e77;
+    --grey-blue: #a1b2cd;
+    --grey-light: #e5eaf1;
+
+    /* normalizando o tamanho de font-size em 10px em % */
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background: var(--background);
+}
+
+body, button, input, textarea {
+    /* clamp e um intervalo de tamanho */
+    font-size: clamp(14px,1.6rem, 2vw); /*minsize, std, maxsize*/
+    /* font-family:; */
+}
